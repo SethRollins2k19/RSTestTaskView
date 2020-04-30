@@ -1,0 +1,195 @@
+.TableCRM{
+    background-color: #9D94FF;
+    padding: 25px;
+    border-radius: 12px;
+}
+.TableCRMHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.TableCRMFilter{
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    border: none;
+    position: relative;
+}
+.TableCRMFilterLower{
+}
+.TableCRMFilterLower:before{
+    content: "!";
+    position: absolute;
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    left: -10px;
+    top: -2px;
+}
+.TableCRMFilterSubmit{
+    height: 100%;
+    padding: 5px;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.TableCRMFilter input{
+    border-radius: 10px 0 0 10px;
+    border: 1px solid gray;
+    padding: 5px;
+    width: calc(100% - 10px);
+    color: gray;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+.TableCRMFilter:hover input, .TableCRMFilter input:focus,
+.TableCRMFilter:hover .TableCRMFilterSubmit, .TableCRMFilter:focus .TableCRMFilterSubmit {
+    border-color: #713BB3;
+}
+.TableCRMFilter::placeholder{
+    color: lightgrey;
+    font-weight: normal;
+}
+.TableCRMInner{
+    word-break: break-word;
+    border-radius: 12px;
+}
+.TableCRMInnerHeader{
+    margin-top: 20px;
+    font-family: cursive;
+    display: grid;
+    border-radius:15px 15px 0 0;
+    grid-template-columns: 5fr 3fr 3fr;
+    border-bottom: 1px solid #7BB7E8;
+    background-color: #FFCCAD;
+}
+.TableCRMCell{
+    padding: 10px 5px;
+}
+.TableCRMOpen{
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 5px 3px;
+    margin-right: 5px;
+    border: 1px solid #CF94FF;
+}
+.TableCRMOpen:hover{
+    background-color: #CBFF7A;
+    color: darkslateblue;
+}
+.TableCRMOpenActive{
+    color: darkslateblue;
+    padding: 0 7px 3px;
+    background-color: #CBFF7A;
+}
+.TableCRMItem{
+    display: grid;
+    grid-template-columns: 5fr 3fr 3fr;
+    background-color: #FFE0AD;
+    border-bottom: 1px solid #CF94FF;
+    transition: .5s linear;
+    font-size: 15px;
+}
+.TableCRMItemWrapper:last-of-type .TableCRMItem{
+    border-bottom: none;
+}
+.TableCRMItem:hover{
+    background-color: #D67660;
+}
+.TableCRMItemWrapper:last-of-type{
+    border-radius: 0 0 15px 15px;
+    overflow: hidden;
+}
+.Tag {
+    display: inline-block;
+    font-size: 12px;
+    padding: 2.5px 5px;
+    background-color: #FFBB74;
+    border-radius: 12px;
+    margin-left: 5px;
+}
+.TableCRMOrderList {
+    height: 0;
+    transform-origin: top;
+    transform: scaleY(0);
+}
+.TableCRMOrderListActive {
+    transform: scaleY(1);
+    height: auto;
+}
+
+.TableCRMOrder{
+    display: flex;
+    align-items: center;
+    background-color: #D6A560;
+    padding: 5px;
+    border-bottom: 1px solid #D67660;
+}
+.TableCRMItemWrapper:last-of-type .TableCRMOrder:last-of-type{
+    border-radius: 0 0 15px 15px;
+}
+
+.TableCRMOrderFunnel{
+    margin: 0 10px;
+    padding: 5px 10px 7px;
+    border: 1px dashed #D67660;
+    border-radius: 15px;
+    background-color: #94D7FF;
+}
+.funnelDecoration{
+    border: 1px inset #7BB7E8;
+    border-radius: 15px;
+    background-color: #94A8FF;
+    padding: 0 5px 3px;
+}
+.SpinnerWrapper{
+    height: 300px;
+    width: 100%;
+    background-color: #FFBB74;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader,
+.loader:after {
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+}
+.loader {
+    margin: 60px auto;
+    font-size: 10px;
+    position: relative;
+    text-indent: -9999em;
+    border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+    border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+    border-left: 1.1em solid #7BB7E8;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load8 1.1s infinite linear;
+    animation: load8 1.1s infinite linear;
+}
+@-webkit-keyframes load8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes load8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
