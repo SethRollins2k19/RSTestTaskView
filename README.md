@@ -3,6 +3,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+### `npm i`
+`Что бы установить все зависимости`
 ### `yarn start`
 ### `что бы запустить представление и во второй консоли запустить api`
 
