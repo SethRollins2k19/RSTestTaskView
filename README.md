@@ -6,7 +6,7 @@ In the project directory, you can run:
 ### `npm i`
 `Что бы установить все зависимости`
 ### `yarn start`
-### `что бы запустить представление и во второй консоли запустить api`
+### `что бы запустить представление (во второй консоли нужно запустить api)`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
